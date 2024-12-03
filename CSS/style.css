@@ -1,0 +1,549 @@
+@font-face {
+  font-family: "IM Fell Great Primer SC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/imfellgreatprimersc/v21/ga6daxBOxyt6sCqz3fjZCTFCTUDMHagsQKdDTIf6D30.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cormorant/v21/H4clBXOCl9bbnla_nHIq75u9.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  margin: 0;
+  width: 1200px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* section header */
+#header {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 18px;
+}
+
+.logo > p {
+  display: block;
+  margin-left: -4px;
+  margin-top: -8px;
+  font-family: "IM Fell Great Primer SC", serif;
+  font-size: 19px;
+  font-weight: 400;
+  font-style: normal;
+}
+nav {
+  margin-left: 120px;
+  margin-top: 7px;
+}
+nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 69px;
+  font-family: "Open Sans", serif;
+  font-size: 18px;
+}
+
+#header a {
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+:is(#bin_profile, #search) a:hover img {
+  transform: scale(1.2);
+}
+#bin_profile {
+  margin-left: 148px;
+  margin-top: 9px;
+}
+#bin_profile img {
+  padding: 8px;
+}
+#search {
+  margin-left: 87px;
+  margin-top: 15px;
+}
+
+#header_picture {
+  position: absolute;
+  top: 175px;
+  width: 100%;
+}
+
+#background1 {
+  left: 0;
+  background-image: url(../images/Header_BG_Image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: absolute;
+  width: 100%;
+}
+
+#background2 {
+  left: 0;
+  background-image: url(../images/Header_BG_Mask.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: absolute;
+  width: 100%;
+}
+
+h1 {
+  width: 790px;
+  font-family: "Cormorant", serif;
+  font-size: 60px;
+  font-weight: 300;
+  color: white;
+  position: relative;
+  top: 200px;
+  left: 10px;
+}
+
+main h2 {
+  font-family: "Cormorant", serif;
+  font-weight: 300;
+  font-size: 40px;
+  margin-top: 70px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+#header_picture p {
+  width: 560px;
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  position: relative;
+  top: 150px;
+  left: 10px;
+}
+
+#slogan p {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 38px;
+  margin: 680px auto 150px;
+  width: 704px;
+  text-align: center;
+}
+
+/* section Explore our Collections */
+#collections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+#collections div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#collections a {
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+}
+
+/* section What our Clients say */
+#feedback {
+  margin-top: 150px;
+  height: 397px;
+  background-color: #f7f2ea;
+}
+#feedback h2 {
+  padding-top: 57px;
+}
+#feedback > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#feedback article {
+  font-family: "Open Sans", serif;
+  flex: 200px;
+  padding: 15px;
+}
+
+#feedback article p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#feedback .name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*section Our Tea Blog */
+#blog {
+  height: 619px;
+  margin-bottom: 135px;
+}
+#blog h2 {
+  margin-top: 138px;
+  margin-left: 0;
+  margin-right: 47px;
+}
+#blogCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#blogCards .description {
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+#blogCards > div {
+  display: flex;
+  width: 542px;
+  height: 180px;
+  padding: 21px 15px 21px 19px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+
+.text a,
+.author {
+  font-family: "Open Sans", serif;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#blog > button {
+  display: block;
+  width: 147px;
+  height: 51px;
+  background-color: #ffffff;
+  border: 1px solid #151618;
+  font-family: "Open Sans", serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px;
+  margin: 32px 489px 20px;
+}
+
+#blog > button:hover {
+  cursor: pointer;
+  background-color: #cbf5e3;
+}
+
+/* section Subscribe */
+#subscribe {
+  height: 418px;
+  background-color: #f7f2ea;
+  background-image: url("../images/tea 1.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#subscribe h2 {
+  text-align: left;
+  margin-top: 15px;
+}
+
+#subscribe p,
+span,
+input,
+button,
+::placeholder {
+  font-family: "Open Sans", serif;
+  font-weight: 300;
+  color: #151618;
+}
+
+#subscribe > div {
+  margin-top: -20px;
+  padding-left: 0px;
+  width: 50%;
+}
+#subscribe p {
+  margin-top: 55px;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 19px;
+}
+#email {
+  max-width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#subscribe input {
+  margin-left: 35px;
+  background-color: #ffffff00;
+  border: 0;
+  width: 300px;
+}
+
+#checkbox span {
+  font-size: 13px;
+}
+
+#subscribe input#agreement {
+  width: 13px;
+  margin: 5px 10px 0 0;
+}
+
+#subscribe div#checkbox {
+  display: flex;
+  align-items: start;
+  margin-top: 10px;
+}
+
+::placeholder {
+  color: #b8b58b;
+  font-size: 20px;
+}
+
+#hr-line {
+  margin-bottom: 0;
+  border: none;
+  border-top: 2px solid #b8b58b;
+  margin-right: 10px;
+  width: 400px;
+}
+
+#subscribe button {
+  margin-left: 65px;
+  width: 116px;
+  height: 51px;
+  background-color: #ffffff;
+  border: 1px solid #151618;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#subscribe button:hover {
+  cursor: pointer;
+  background-color: #cbf5e3;
+}
+
+/* section We Prioritise */
+#prioritise {
+  margin-top: 140px;
+}
+
+#frame {
+  margin-top: 40px;
+}
+
+#prioritise #frame {
+  font-family: "Open Sans", serif;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#frame div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+#frame p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#frame p:first-child {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+#frame img {
+  margin-top: 35px;
+}
+
+/* footer */
+footer {
+  height: 593px;
+  background-color: #f7f2ea;
+  margin-top: 130px;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-style: normal;
+}
+
+footer h3 {
+  font-family: "Cormorant", serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: #151618;
+  margin-top: 100px;
+  margin-bottom: 45px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.prod_comp {
+  width: 50%;
+  display: flex;
+  margin-left: 15px;
+}
+
+.prod_comp ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.prod_comp li {
+  padding-bottom: 20px;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.company {
+  margin-left: 220px;
+}
+
+.quat_contacts {
+  width: 50%;
+  display: flex;
+  margin-left: 20px;
+}
+
+.quatation {
+  width: 45%;
+  font-weight: 300;
+  margin-top: 160px;
+}
+
+.quatation p + p {
+  font-size: 13px;
+  width: 60%;
+}
+
+.stayInTouch {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.stayInTouch > p {
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.logo_contacts_socialNet {
+  display: flex;
+}
+
+.contacts_socialNet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts_socialNet address {
+  font-family: "Open Sans", serif;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 300;
+  color: #151618;
+  padding-left: 20px;
+}
+
+address {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.socialNet {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-left: 28px;
+}
+
+.socialNet > img {
+  margin-right: 20px;
+}
+
+.copy_payment {
+  display: flex;
+  width: 58%;
+  justify-content: flex-start;
+  margin-top: 60px;
+}
+
+.payment {
+  display: flex;
+  height: 22px;
+  align-items: center;
+}
+
+.payment img {
+  margin-left: 20px;
+}
+
+cite {
+  display: inline;
+  font-style: normal;
+  margin-left: 12px;
+  margin-right: 166px;
+}
