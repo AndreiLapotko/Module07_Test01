@@ -57,7 +57,7 @@ a {
   margin-top: 18px;
 }
 
-.logo > p {
+.logo_top > p {
   display: block;
   margin-left: -4px;
   margin-top: -8px;
@@ -132,45 +132,70 @@ nav a:hover {
   width: 100%;
 }
 
-h1 {
-  width: 790px;
+.main_title1 {
   font-family: "Cormorant", serif;
-  font-size: 60px;
+  font-size: 59px;
   font-weight: 300;
   color: white;
+  margin: auto;
   position: relative;
-  top: 200px;
-  left: 10px;
+  top: 250px;
+  left: 13px;
+}
+
+.main_title2 {
+  font-family: "Cormorant", serif;
+  font-size: 59px;
+  font-weight: 300;
+  color: white;
+  margin: auto;
+  position: relative;
+  top: 240px;
+  left: 13px;
+}
+
+
+.picture_text {
+  width: 560px;
+  font-family: "Cormorant", serif;
+  font-size: 23.5px;
+  font-weight: 290;
+  color: white;
+  position: relative;
+  top: 228px;
+  left: 13px;
+}
+
+
+/*main*/
+#slogan{
+  margin-top: 682px;
+
+}
+#slogan p:first-child {
+  font-family: "Cormorant", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 36.5px;
+  margin: 0px 247px 0px;
+  text-align: center;
+}
+
+#slogan p:last-child {
+  font-family: "Cormorant", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 36px;
+  margin-top: 3px;
+  text-align: center;
 }
 
 main h2 {
   font-family: "Cormorant", serif;
   font-weight: 300;
-  font-size: 40px;
-  margin-top: 70px;
-  margin-left: 10px;
-  text-align: center;
-}
-
-#header_picture p {
-  width: 560px;
-  font-family: "Cormorant", serif;
-  font-size: 24px;
-  font-weight: 300;
-  color: white;
-  position: relative;
-  top: 150px;
-  left: 10px;
-}
-
-#slogan p {
-  font-family: "Cormorant", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 38px;
-  margin: 680px auto 150px;
-  width: 704px;
+  font-size: 39.5px;
+  margin-top: 149px;
+  margin-left: 12px;
   text-align: center;
 }
 
@@ -191,6 +216,7 @@ main h2 {
 #collections a {
   font-family: "Cormorant", serif;
   font-size: 24px;
+  margin-top: 5px;
 }
 
 /* section What our Clients say */
@@ -200,7 +226,7 @@ main h2 {
   background-color: #f7f2ea;
 }
 #feedback h2 {
-  padding-top: 57px;
+  padding-top: 55px;
 }
 #feedback > div {
   display: flex;
@@ -214,13 +240,17 @@ main h2 {
 }
 
 #feedback article p {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 200;
+  margin-top: 12px;
+  line-height: 1.43;
 }
 
 #feedback .name {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  top: -3%;
 }
 
 /*section Our Tea Blog */
@@ -229,9 +259,9 @@ main h2 {
   margin-bottom: 135px;
 }
 #blog h2 {
-  margin-top: 138px;
+  margin-top: 136px;
   margin-left: 0;
-  margin-right: 47px;
+  margin-right: 49px;
 }
 #blogCards {
   display: flex;
@@ -239,22 +269,24 @@ main h2 {
 }
 
 #blogCards .description {
+  width: 250px;
   font-family: "Cormorant", serif;
   font-size: 24px;
-  margin: 0;
+  margin: 3px 0 -15px;
 }
 
 #blogCards > div {
   display: flex;
-  width: 542px;
-  height: 180px;
+  width: 548px;
+  height: 177px;
   padding: 21px 15px 21px 19px;
 }
 
 .text {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
+
+  padding-left: 14px;
   justify-content: space-between;
 }
 
@@ -263,6 +295,10 @@ main h2 {
   font-family: "Open Sans", serif;
   font-size: 13px;
   font-weight: 100;
+}
+
+.author {
+  position: relative;
 }
 
 #blog > button {
@@ -275,7 +311,7 @@ main h2 {
   font-size: 20px;
   font-weight: 300;
   padding: 10px;
-  margin: 32px 489px 20px;
+  margin: 38px 489px 20px;
 }
 
 #blog > button:hover {
@@ -297,7 +333,7 @@ main h2 {
 
 #subscribe h2 {
   text-align: left;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 #subscribe p,
@@ -316,10 +352,11 @@ button,
   width: 50%;
 }
 #subscribe p {
-  margin-top: 55px;
-  margin-left: 12px;
+  margin-top: 51px;
+  margin-left: 13px;
   margin-right: 12px;
-  font-size: 19px;
+  font-size: 19.5px;
+  line-height: 29px;
 }
 #email {
   max-width: 60%;
@@ -329,19 +366,27 @@ button,
 }
 
 #subscribe input {
-  margin-left: 35px;
+  margin-top: 10px;
+  margin-left: 34px;
   background-color: #ffffff00;
   border: 0;
   width: 300px;
 }
 
+#checkbox {
+  margin-left: 20px;
+}
+#checkbox label {
+  padding-right: 12px;
+}
 #checkbox span {
   font-size: 13px;
+  letter-spacing: -0.1px;
 }
 
 #subscribe input#agreement {
-  width: 13px;
-  margin: 5px 10px 0 0;
+  width: 12px;
+  margin: 4px 8px 0 0;
 }
 
 #subscribe div#checkbox {
@@ -379,12 +424,14 @@ button,
 }
 
 /* section We Prioritise */
-#prioritise {
-  margin-top: 140px;
+#prioritise h2{
+  margin-top: 138px;
+  margin-left: 3px;
 }
 
 #frame {
-  margin-top: 40px;
+  margin-top: 42px;
+  margin-left: 3px;
 }
 
 #prioritise #frame {
@@ -413,14 +460,16 @@ button,
 }
 
 #frame img {
-  margin-top: 35px;
+  margin-top: 31px;
+  margin-left: 21px;
+
 }
 
 /* footer */
 footer {
   height: 593px;
   background-color: #f7f2ea;
-  margin-top: 130px;
+  margin-top: 132px;
   font-family: "Open Sans", serif;
   font-size: 16px;
   font-style: normal;
@@ -432,7 +481,7 @@ footer h3 {
   font-size: 24px;
   color: #151618;
   margin-top: 100px;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 }
 
 .navigation {
@@ -442,7 +491,7 @@ footer h3 {
 .prod_comp {
   width: 50%;
   display: flex;
-  margin-left: 15px;
+  margin-left: 13px;
 }
 
 .prod_comp ul {
@@ -470,7 +519,9 @@ footer h3 {
 .quatation {
   width: 45%;
   font-weight: 300;
-  margin-top: 160px;
+  margin-top: 161px;
+  margin-left: 3px;
+
 }
 
 .quatation p + p {
@@ -480,7 +531,7 @@ footer h3 {
 
 .stayInTouch {
   width: 50%;
-  margin-left: 50px;
+  margin-left: 54px;
 }
 
 .stayInTouch > p {
@@ -492,13 +543,30 @@ footer h3 {
 .logo_contacts_socialNet {
   display: flex;
 }
+.logo_footer {
+  transform: scale(0.8);
+  margin-top: -9px;
+  margin-left: -4px;
 
+}
+
+.logo_footer > p {
+  display: block;
+  margin-left: -4px;
+  margin-top: -6px;
+  font-family: "IM Fell Great Primer SC", serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
 .contacts_socialNet {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
+.contacts_socialNet img {
+  margin-right: 9px;
+}
 .contacts_socialNet address {
   font-family: "Open Sans", serif;
   font-style: normal;
@@ -509,7 +577,7 @@ footer h3 {
 }
 
 address {
-  margin-top: 20px;
+  margin-top: 19px;
   margin-left: 10px;
 }
 
@@ -517,18 +585,18 @@ address {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
-  margin-left: 28px;
+  margin-left: 31px;
 }
 
 .socialNet > img {
-  margin-right: 20px;
+  margin-right: 19px;
 }
 
 .copy_payment {
   display: flex;
   width: 58%;
   justify-content: flex-start;
-  margin-top: 60px;
+  margin-top: 58px;
 }
 
 .payment {
